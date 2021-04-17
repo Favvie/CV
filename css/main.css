@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  background: #ECECEC;
+  width: 100%;
+}
+
+.sidebar {
+  background: white;
+  position: fixed;
+  height: 100%;
+  margin-left: 1rem;
+  padding: 1.5rem;
+  width: 30%;
+  padding-top: 15%;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 2rem 0px;
+}
+
+h4 {
+  font-size: 1.3em;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+}
+
+.labels {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+p {
+  word-wrap: break-word;
+  font-size: .9rem;
+}
+
+.main-body {
+  margin-left: 35%;
+  margin-right: 7%;
+  padding-top: 15%;
+}
+
+.main-body h4 {
+  margin-top: 1rem;
+}
+
+.main-body ul li {
+  margin-left: 1.5rem;
+}
+
+.main-body .work, .main-body .p-school, .main-body .s-school, .main-body .english, .main-body .igbo {
+  position: relative;
+}
+
+.main-body .work::after {
+  content: '08/19-12/19';
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 400;
+}
+
+.main-body .p-school::after {
+  content: '09/00-07/10';
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 400;
+}
+
+.main-body .s-school::after {
+  content: '09/10-07/15';
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 400;
+}
+
+.main-body .english {
+  padding-bottom: 2rem;
+}
+
+.main-body .english::after {
+  content: '\2014 \00a0 \00a0 Highly proficient in speaking and writing';
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  font-weight: 400;
+}
+
+.main-body .igbo::after {
+  content: "\2014 \00a0 \00a0 B1";
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+  .main-body, .sidebar {
+    padding-top: 7%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+  .main-body, .sidebar {
+    padding-top: 3%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+  .main-body .english::after, .main-body .igbo::after {
+    left: 15rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
